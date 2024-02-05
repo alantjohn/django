@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Add
+{% endblock %}
+{% block content %}
+
+<center>
+<h3 class="mt-5">Add book details-built in</h3>
+<form method ="POST">
+    {% csrf_token %}
+    {{forms}}
+    <input type="submit">
+</form></center>
+{% endblock %}
